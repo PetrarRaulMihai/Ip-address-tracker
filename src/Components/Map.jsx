@@ -13,7 +13,7 @@ function Map({ location }) {
       // remove additional spaces or signs
       const cleanedLocation = location.split(/[\s-*]/)[0];
       const mainApi = "0fc7a17f5407196edefd20609b52664d";
-      const cityUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cleanedLocation}&appid=${mainApi}`;
+      const cityUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${cleanedLocation}&appid=${mainApi}`;
 
       const getCoords = async () => {
         const resp = await fetch(cityUrl);
